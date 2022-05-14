@@ -1,1 +1,1 @@
-# MATLAB-numjerical-simulation
+# MATLAB-numerical-simulation
