@@ -1,10 +1,8 @@
-%Website: https://www.mathworks.com/help/matlab/ref/fft.html
-%Digital Signal Processing lab
-%Student's name: Huynh Le Nhat Tam
-%VGU Student ID: 14506
+%References: https://www.mathworks.com/help/matlab/ref/fft.html and https://www.mathworks.com/help/matlab/ref/audiorecorder.html
+%Author: Huynh Le Nhat Tam
 Fs = 48000 ; 
 nBits = 16 ; 
-nChannels = 2 ; %stereo sound
+nChannels = 2 ; %stereo sound (nChannels = 1 for mono sound)
 recObj = audiorecorder(Fs,nBits,nChannels);
 disp('Start speaking.')
 recordblocking(recObj,7);%duration of the recording (seconds)
