@@ -3,7 +3,7 @@
 Fs = 48000 ; 
 nBits = 16 ; % 16 bits per sample (bit depth = 16)
 nChannels = 2 ; %stereo sound (nChannels = 1 for mono sound)
-recObj = audiorecorder(Fs,nBits,nChannels);
+recObj = audiorecorder(Fs,nBits,nChannels); % Creates and returns an audiorecorder object
 disp('Start speaking.')
 recordblocking(recObj,7);%duration of the recording (seconds)
 disp('End of Recording.');
