@@ -10,7 +10,7 @@ disp('End of Recording.');
 %play(recObj);
 y = getaudiodata(recObj); % Store recorded audio signal in numeric array
 z = fft(y);
-L = 580;
+L = 580; % Length of y
 P2 = abs(z/L);
 P1 = P2(1:L/2+1);
 P1(2:end-1) = 2*P1(2:end-1);
