@@ -8,7 +8,7 @@ disp('Start speaking.')
 recordblocking(recObj,7);%duration of the recording (seconds)
 disp('End of Recording.');
 %play(recObj);
-y = getaudiodata(recObj);
+y = getaudiodata(recObj); % Store recorded audio signal in numeric array
 z = fft(y);
 L = 580;
 P2 = abs(z/L);
