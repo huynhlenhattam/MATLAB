@@ -1,7 +1,7 @@
 %References: https://www.mathworks.com/help/matlab/ref/fft.html and https://www.mathworks.com/help/matlab/ref/audiorecorder.html
 %Author: Huynh Le Nhat Tam
 Fs = 48000 ; 
-nBits = 16 ; 
+nBits = 16 ; % 16 bits per sample (bit depth = 16)
 nChannels = 2 ; %stereo sound (nChannels = 1 for mono sound)
 recObj = audiorecorder(Fs,nBits,nChannels);
 disp('Start speaking.')
