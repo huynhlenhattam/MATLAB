@@ -6,6 +6,6 @@ fs = 48000; % Sampling frequency (samples per second)
  %t = (0:dt:StopTime)'; % seconds 
  tt = 0:dt:0.01 ;
  y = sin(2*pi*3000.*tt) + sin(2*pi*9000.*tt) ;
- yf = filter(b,1,y);%b is the coefficient exported from FIR_Low_pass_filter.fda
+ yf = filter(b,1,y);%b are the coefficients exported from FIR_Low_pass_filter.fda
  plot(tt,y,'r') ; hold on; plot(tt,yf,'b');
  legend('raw mixed signal','filtered signal');
